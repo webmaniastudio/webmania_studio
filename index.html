@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Web Mania Studio | Home</title>
+  <meta name="description" content="High‑performance websites and web apps with modern UI/UX and robust engineering.">
+  <meta name="theme-color" content="#0f172a"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Manrope:wght@400;600;700;800&family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body data-page="home">
+  <div class="site-bg"><div class="aurora"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div><div class="pattern"></div></div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner max-w-7xl mx-auto">
+      <!-- Actions (left) -->
+      <div class="header-actions">
+        <button id="langToggle" class="btn-ghost" aria-label="Toggle language">FA / EN</button>
+        <button id="themeToggle" class="btn-ghost" aria-label="Toggle theme">
+          <svg class="icon theme-icon sun"><use href="/assets/icons.svg#sun"></use></svg>
+          <svg class="icon theme-icon moon"><use href="/assets/icons.svg#moon"></use></svg>
+        </button>
+        <a href="/contact.html" class="btn-primary magnet"><span data-i18n="nav.cta">شروع همکاری</span></a>
+        <button id="menuToggle" class="btn-ghost mobile-only" aria-label="Menu">
+          <svg class="icon"><use href="/assets/icons.svg#menu"></use></svg>
+        </button>
+      </div>
+
+      <!-- Nav center -->
+      <nav class="site-nav">
+        <a href="/index.html" class="nav-link" data-i18n="nav.home">خانه</a>
+        <a href="/services.html" class="nav-link" data-i18n="nav.services">خدمات</a>
+        <a href="/portfolio.html" class="nav-link" data-i18n="nav.portfolio">نمونه‌کارها</a>
+        <a href="/about.html" class="nav-link" data-i18n="nav.about">درباره‌ما</a>
+        <a href="/contact.html" class="nav-link" data-i18n="nav.contact">تماس</a>
+      </nav>
+
+      <!-- Brand (right) -->
+      <a href="/index.html" class="brand">
+        <span class="brand-logo"><img src="/assets/logo.svg" alt="Logo"></span>
+        <span class="brand-name gradient-text">Web Mania Studio</span>
+      </a>
+    </div>
+
+    <!-- Mobile nav -->
+    <div id="mobileNav" class="mobile-nav">
+      <a href="/index.html" class="mobile-link" data-i18n="nav.home">خانه</a>
+      <a href="/services.html" class="mobile-link" data-i18n="nav.services">خدمات</a>
+      <a href="/portfolio.html" class="mobile-link" data-i18n="nav.portfolio">نمونه‌کارها</a>
+      <a href="/about.html" class="mobile-link" data-i18n="nav.about">درباره‌ما</a>
+      <a href="/contact.html" class="mobile-link" data-i18n="nav.contact">تماس</a>
+      <div class="mobile-actions">
+        <button class="btn-ghost w-full" id="langToggleMobile">FA / EN</button>
+        <button class="btn-ghost" id="themeToggleMobile">
+          <svg class="icon theme-icon sun"><use href="/assets/icons.svg#sun"></use></svg>
+          <svg class="icon theme-icon moon"><use href="/assets/icons.svg#moon"></use></svg>
+        </button>
+        <a href="/contact.html" class="btn-primary w-full magnet"><span data-i18n="nav.cta">شروع همکاری</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <!-- Hero -->
+    <section class="section max-w-7xl mx-auto px-4 py-12 md:py-16">
+      <div class="hero-grid">
+        <div class="hero-content reveal">
+          <h1 class="gradient-text" data-hero-title></h1>
+          <p class="hero-sub text-lg mt-3" data-hero-sub></p>
+          <ul class="check-list mt-4">
+            <li>طراحی UI/UX حرفه‌ای و سیستم‌طراحی مقیاس‌پذیر</li>
+            <li>توسعه فرانت/بک‌اند مدرن (React/Vue/Node.js)</li>
+            <li>بهینه‌سازی سرعت، سئو فنی و آنالیتیکس</li>
+          </ul>
+          <div class="flex flex-wrap gap-3 mt-6">
+            <a href="/contact.html" class="btn-primary magnet"><span data-hero-cta1></span></a>
+            <a href="/portfolio.html" class="btn-ghost magnet"><span data-hero-cta2></span></a>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="visual-stack">
+            <div class="v-card card"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80" alt="App preview"></div>
+            <div class="v-card card"><img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1000&q=80" alt="Corporate preview"></div>
+            <div class="v-card card"><img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1000&q=80" alt="E‑commerce preview"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services preview (kept high but light) -->
+    <section class="section max-w-7xl mx-auto px-4 py-10 reveal">
+      <h2 class="text-2xl font-bold mb-4" data-i18n="services.title">خدمات ما</h2>
+      <div id="servicesPreview" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
+    </section>
+
+    <!-- Featured Work (2 items to balance bottom) -->
+    <section class="section max-w-7xl mx-auto px-4 py-10 reveal">
+      <h2 class="text-2xl font-bold mb-4" data-i18n="featured.title">نمونه‌کار منتخب</h2>
+      <div id="featuredGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section max-w-5xl mx-auto px-4 py-10 reveal">
+      <h2 id="testiTitle" class="text-center text-2xl font-bold mb-6"></h2>
+      <div class="slider glass p-2 card">
+        <div class="slider-track"></div>
+      </div>
+      <div class="slider-dots mt-3"></div>
+    </section>
+
+    <!-- Stats (lower) -->
+    <section class="section max-w-7xl mx-auto px-4 py-10 reveal">
+      <div id="statsBand" class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section max-w-7xl mx-auto px-4 pb-16 reveal">
+      <div class="glass p-6 card flex flex-col md:flex-row items-center justify-between gap-4">
+        <h3 id="ctaTitle" class="text-xl font-bold"></h3>
+        <a href="/contact.html" id="ctaBtn" class="btn-primary magnet"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between text-sm">
+      <div>© <span id="year"></span> Web Mania Studio — <span data-i18n="footer.rights">تمامی حقوق محفوظ است.</span></div>
+      <div class="flex items-center gap-4">
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="btn-primary" aria-label="Back to top">
+    <svg class="icon"><use href="/assets/icons.svg#arrow-up"></use></svg>
+  </button>
+
+  <script src="/assets/app.js"></script>
+</body>
+</html>

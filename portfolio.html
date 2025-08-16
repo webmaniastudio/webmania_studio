@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Web Mania Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Manrope:wght@400;600;700;800&family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body data-page="portfolio">
+  <div class="site-bg"><div class="aurora"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div><div class="pattern"></div></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner max-w-7xl mx-auto">
+      <div class="header-actions">
+        <button id="langToggle" class="btn-ghost">FA / EN</button>
+        <button id="themeToggle" class="btn-ghost"><svg class="icon theme-icon sun"><use href="/assets/icons.svg#sun"></use></svg><svg class="icon theme-icon moon"><use href="/assets/icons.svg#moon"></use></svg></button>
+        <a href="/contact.html" class="btn-primary magnet"><span data-i18n="nav.cta">شروع همکاری</span></a>
+        <button id="menuToggle" class="btn-ghost mobile-only"><svg class="icon"><use href="/assets/icons.svg#menu"></use></svg></button>
+      </div>
+      <nav class="site-nav">
+        <a href="/index.html" class="nav-link" data-i18n="nav.home">خانه</a>
+        <a href="/services.html" class="nav-link" data-i18n="nav.services">خدمات</a>
+        <a href="/portfolio.html" class="nav-link" data-i18n="nav.portfolio">نمونه‌کارها</a>
+        <a href="/about.html" class="nav-link" data-i18n="nav.about">درباره‌ما</a>
+        <a href="/contact.html" class="nav-link" data-i18n="nav.contact">تماس</a>
+      </nav>
+      <a href="/index.html" class="brand"><span class="brand-logo"><img src="/assets/logo.svg" alt="Logo"></span><span class="brand-name gradient-text">Web Mania Studio</span></a>
+    </div>
+    <div id="mobileNav" class="mobile-nav">
+      <a href="/index.html" class="mobile-link" data-i18n="nav.home">خانه</a>
+      <a href="/services.html" class="mobile-link" data-i18n="nav.services">خدمات</a>
+      <a href="/portfolio.html" class="mobile-link" data-i18n="nav.portfolio">نمونه‌کارها</a>
+      <a href="/about.html" class="mobile-link" data-i18n="nav.about">درباره‌ما</a>
+      <a href="/contact.html" class="mobile-link" data-i18n="nav.contact">تماس</a>
+      <div class="mobile-actions">
+        <button class="btn-ghost w-full" id="langToggleMobile">FA / EN</button>
+        <button class="btn-ghost" id="themeToggleMobile"><svg class="icon theme-icon sun"><use href="/assets/icons.svg#sun"></use></svg><svg class="icon theme-icon moon"><use href="/assets/icons.svg#moon"></use></svg></button>
+        <a href="/contact.html" class="btn-primary w-full magnet"><span data-i18n="nav.cta">شروع همکاری</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <section class="section max-w-7xl mx-auto px-4 py-10 reveal">
+      <h1 class="text-3xl font-extrabold mb-4" data-i18n="portfolio.title">نمونه‌کارها</h1>
+      <div id="filterBar" class="filter-bar mb-6"></div>
+      <div id="portfolioGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="projectModal">
+    <div class="modal-card">
+      <div class="grid md:grid-cols-2">
+        <div class="relative">
+          <img id="modalImage" src="" alt="" class="w-full h-full object-cover">
+          <button id="closeModal" class="modal-close"><svg class="icon"><use href="/assets/icons.svg#close"></use></svg></button>
+        </div>
+        <div class="p-6">
+          <h3 id="modalTitle" class="text-2xl font-bold mb-1"></h3>
+          <div id="modalCategory" class="badge mb-4"></div>
+          <p id="modalDesc" class="opacity-80 mb-4"></p>
+          <a id="modalLink" class="btn-primary magnet" href="#" target="_blank" rel="noopener"><span data-i18n="portfolio.view"></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer"><div class="max-w-7xl mx-auto px-4 py-6 text-sm">© <span id="year"></span> Web Mania Studio — <span data-i18n="footer.rights"></span></div></footer>
+  <button id="backToTop" class="btn-primary"><svg class="icon"><use href="/assets/icons.svg#arrow-up"></use></svg></button>
+  <script src="/assets/app.js"></script>
+</body>
+</html>

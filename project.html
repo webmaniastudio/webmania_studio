@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project — Web Mania Studio</title>
+  <meta name="description" content="Project details by Web Mania Studio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;600;700&family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="icon" type="image/png" href="assets/img/logo-mark.png" />
+</head>
+<body data-page="project">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo logo--circle" aria-label="Web Mania Studio">
+        <img class="logo-img logo-img--dark" src="assets/img/logo-dark.png" srcset="assets/img/logo-dark.png 1x, assets/img/logo-dark@2x.png 2x" alt="Web Mania Studio" />
+        <img class="logo-img logo-img--light" src="assets/img/logo-light.png" srcset="assets/img/logo-light.png 1x, assets/img/logo-light@2x.png 2x" alt="Web Mania Studio" />
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="portfolio.html" class="active" data-i18n="nav.portfolio">Portfolio</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="header-ctls">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.76 4.84l-1.8-1.79L3.17 4.84l1.79 1.79 1.8-1.79zm10.48 0l1.79-1.79 1.79 1.79-1.79 1.79-1.79-1.79zM12 4V1h0v3zm0 19v-3h0v3zM4 12H1v0h3zm19 0h-3v0h3zM6.76 19.16l-1.8 1.79-1.79-1.79 1.79-1.79 1.8 1.79zm10.48 0l1.79 1.79 1.79-1.79-1.79-1.79-1.79 1.79zM12 8a4 4 0 100 8 4 4 0 000-8z"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.742 13.045A8 8 0 1111 3a8.001 8.001 0 009.742 10.045z"/></svg>
+        </button>
+        <div class="lang-switch">
+          <button class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+          <button class="lang-btn" data-lang="fa" aria-pressed="false">FA</button>
+        </div>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="about.html" data-i18n="nav.about">About Us</a>
+    <a href="services.html" data-i18n="nav.services">Services</a>
+    <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+    <a href="contact.html" data-i18n="nav.contact">Contact Us</a>
+  </nav>
+
+  <section class="project-hero">
+    <div class="container">
+      <h1 id="projTitle" class="section-title reveal">Project Title</h1>
+      <p class="muted reveal"><span id="projClient">Client</span> • <span id="projCategory">Category</span></p>
+      <div class="hero-media reveal"><img id="projCover" src="" alt="Project cover" /></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container two-col">
+      <div class="col">
+        <h2 class="section-title small" data-i18n="project.ourRole">Our Role</h2>
+        <p id="projRole" class="muted"></p>
+
+        <h2 class="section-title small" data-i18n="project.tech">Technologies Used</h2>
+        <ul id="projTech" class="tech-list"></ul>
+
+        <a id="projLive" class="btn btn-primary" target="_blank" rel="noopener" href="#" data-i18n="project.liveDemo">Live Demo</a>
+      </div>
+      <div class="col">
+        <h2 class="section-title small" data-i18n="project.challenge">The Challenge</h2>
+        <p id="projChallenge" class="muted"></p>
+
+        <h2 class="section-title small" data-i18n="project.solution">The Solution</h2>
+        <p id="projSolution" class="muted"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gallery">
+    <div class="container">
+      <div id="projGallery" class="gallery-grid"></div>
+      <div class="cta-center"><a href="contact.html" class="btn btn-ghost" data-i18n="cta.startProject">Start Your Project with Us</a></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="logo small logo--circle" aria-label="Web Mania Studio">
+        <img class="logo-img logo-img--dark" src="assets/img/logo-dark.png" srcset="assets/img/logo-dark.png 1x, assets/img/logo-dark@2x.png 2x" alt="Web Mania Studio" />
+        <img class="logo-img logo-img--light" src="assets/img/logo-light.png" srcset="assets/img/logo-light.png 1x, assets/img/logo-light@2x.png 2x" alt="Web Mania Studio" />
+      </div>
+      <div class="foot-links">
+        <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+        <a href="#" data-i18n="footer.terms">Terms of Service</a>
+      </div>
+      <div class="foot-social">
+        <a href="#" class="soc ln" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 6.5A2.44 2.44 0 114.5 4.06 2.44 2.44 0 016.94 6.5zM4.6 8.6h4.6V20H4.6zM14 8.5a4.34 4.34 0 00-3 1.33V8.6H6.4V20H11v-6.1c0-1.6.56-2.66 1.97-2.66 1.35 0 1.86 1 1.86 2.66V20h4.6v-6.84C19.43 9.93 17.62 8.5 15.5 8.5z"/></svg></a>
+        <a href="#" class="soc gh" aria-label="GitHub"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a12 12 0 00-3.8 23.4c.6.1.8-.2.8-.5v-2c-3.4.7-4.1-1.6-4.1-1.6-.6-1.5-1.4-1.9-1.4-1.9-1.1-.7.1-.7.1-.7 1.3.1 2 1.3 2 1.3 1.1 2 2.9 1.4 3.6 1 .1-.8.5-1.4.9-1.7-2.7-.3-5.6-1.4-5.6-6.2 0-1.4.5-2.5 1.3-3.5-.1-.3-.6-1.7.1-3.4 0 0 1.1-.3 3.6 1.3a12.2 12.2 0 016.6 0c2.5-1.6 3.6-1.3 3.6-1.3.7 1.7.2 3.1.1 3.4.9 1 .9 2.1 1.3 3.5 0 4.8-2.9 5.9-5.6 6.2.5.5 1 1.3 1 2.6v3.8c0 .3.2 .6.8 .5A12 12 0 0012 .5z"/></svg></a>
+        <a href="#" class="soc db" aria-label="Dribbble"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1010 10A10 10 0 0012 2z"/></svg></a>
+      </div>
+    </div>
+    <div class="copyright">© 2023 Web Mania Studio. All rights reserved.</div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/projects-data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/project.js"></script>
+</body>
+</html>

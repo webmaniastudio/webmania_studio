@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Web Mania Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Manrope:wght@400;600;700;800&family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body data-page="contact">
+  <div class="site-bg"><div class="aurora"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div><div class="pattern"></div></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner max-w-7xl mx-auto">
+      <div class="header-actions">
+        <button id="langToggle" class="btn-ghost">FA / EN</button>
+        <button id="themeToggle" class="btn-ghost"><svg class="icon theme-icon sun"><use href="/assets/icons.svg#sun"></use></svg><svg class="icon theme-icon moon"><use href="/assets/icons.svg#moon"></use></svg></button>
+        <a href="/contact.html" class="btn-primary magnet"><span data-i18n="nav.cta">شروع همکاری</span></a>
+        <button id="menuToggle" class="btn-ghost mobile-only"><svg class="icon"><use href="/assets/icons.svg#menu"></use></svg></button>
+      </div>
+      <nav class="site-nav">
+        <a href="/index.html" class="nav-link" data-i18n="nav.home">خانه</a>
+        <a href="/services.html" class="nav-link" data-i18n="nav.services">خدمات</a>
+        <a href="/portfolio.html" class="nav-link" data-i18n="nav.portfolio">نمونه‌کارها</a>
+        <a href="/about.html" class="nav-link" data-i18n="nav.about">درباره‌ما</a>
+        <a href="/contact.html" class="nav-link" data-i18n="nav.contact">تماس</a>
+      </nav>
+      <a href="/index.html" class="brand"><span class="brand-logo"><img src="/assets/logo.svg" alt="Logo"></span><span class="brand-name gradient-text">Web Mania Studio</span></a>
+    </div>
+    <div id="mobileNav" class="mobile-nav">
+      <a href="/index.html" class="mobile-link" data-i18n="nav.home">خانه</a>
+      <a href="/services.html" class="mobile-link" data-i18n="nav.services">خدمات</a>
+      <a href="/portfolio.html" class="mobile-link" data-i18n="nav.portfolio">نمونه‌کارها</a>
+      <a href="/about.html" class="mobile-link" data-i18n="nav.about">درباره‌ما</a>
+      <a href="/contact.html" class="mobile-link" data-i18n="nav.contact">تماس</a>
+      <div class="mobile-actions">
+        <button class="btn-ghost w-full" id="langToggleMobile">FA / EN</button>
+        <button class="btn-ghost" id="themeToggleMobile"><svg class="icon theme-icon sun"><use href="/assets/icons.svg#sun"></use></svg><svg class="icon theme-icon moon"><use href="/assets/icons.svg#moon"></use></svg></button>
+        <a href="/contact.html" class="btn-primary w-full magnet"><span data-i18n="nav.cta">شروع همکاری</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <section class="section max-w-7xl mx-auto px-4 py-10 reveal">
+      <h1 class="text-3xl font-extrabold mb-4" data-i18n="contact.title">تماس</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="glass p-6 card">
+          <h3 class="text-xl font-bold mb-4" data-i18n="contact.formTitle">فرم تماس</h3>
+          <form id="contactForm" class="space-y-4">
+            <div><label data-label="name" class="text-sm font-medium">نام کامل</label><input id="name" name="name" type="text" required placeholder="..." /></div>
+            <div><label data-label="email" class="text-sm font-medium">ایمیل</label><input id="email" name="email" type="email" required placeholder="..." /></div>
+            <div><label data-label="phone" class="text-sm font-medium">شماره تلفن</label><input id="phone" name="phone" type="tel" placeholder="..." /></div>
+            <div><label data-label="service" class="text-sm font-medium">خدمات مورد نیاز</label><select id="service" name="service"></select></div>
+            <div><label data-label="budget" class="text-sm font-medium">بودجه پروژه</label><select id="budget" name="budget"></select></div>
+            <div><label data-label="message" class="text-sm font-medium">پیام شما</label><textarea id="message" name="message" rows="4" placeholder="..."></textarea></div>
+            <button type="submit" class="btn-primary magnet"><span data-label="submit">ارسال پیام</span></button>
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+        <div class="space-y-4">
+          <div class="glass p-6 card" id="estimator"></div>
+          <div class="glass p-6 card">
+            <h3 class="text-xl font-bold mb-4">شبکه‌های اجتماعی</h3>
+            <div class="grid grid-cols-2 gap-3">
+              <a href="https://instagram.com" target="_blank" rel="noopener" class="glass p-3 card flex items-center gap-2">
+                <svg class="icon"><use href="/assets/icons.svg#instagram"></use></svg> Instagram
+              </a>
+              <a href="https://t.me" target="_blank" rel="noopener" class="glass p-3 card flex items-center gap-2">
+                <svg class="icon"><use href="/assets/icons.svg#telegram"></use></svg> Telegram
+              </a>
+              <a href="https://rubika.ir" target="_blank" rel="noopener" class="glass p-3 card flex items-center gap-2">
+                <svg class="icon"><use href="/assets/icons.svg#users"></use></svg> Rubika
+              </a>
+              <a href="https://wa.me/15551234567" target="_blank" rel="noopener" class="glass p-3 card flex items-center gap-2">
+                <svg class="icon"><use href="/assets/icons.svg#whatsapp"></use></svg> WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="max-w-7xl mx-auto px-4 py-6 text-sm">© <span id="year"></span> Web Mania Studio — <span data-i18n="footer.rights"></span></div></footer>
+  <button id="backToTop" class="btn-primary"><svg class="icon"><use href="/assets/icons.svg#arrow-up"></use></svg></button>
+  <script src="/assets/app.js"></script>
+</body>
+</html>
